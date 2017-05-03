@@ -229,7 +229,7 @@ module.exports = function(server, async_query){
           helpers.failure(res,next,'Something went wrong while fetching user from the database',500);
         }
         if(user === null) {
-          helpers.failure(res,next,'This user does not exist',404);
+          //helpers.failure(res,next,'This user does not exist',404);
         }
 
         var f_users = user.following;
