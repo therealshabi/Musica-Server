@@ -215,7 +215,7 @@ module.exports = function(server, async_query){
         helpers.failure(res,next,'Something went wrong while fetching user from the database',500);
       }
       if(posts === null || posts.length ===0){
-        helpers.failure(res,next,'This User haven\'t posted anything',404);
+      //  helpers.failure(res,next,'This User haven\'t posted anything',404);
       }
       else{
       for(var i=0;i<posts.length;i++)
